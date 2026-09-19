@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join a Tandem | Fitandem</title>
+  <meta name="description" content="Open a private Fitandem invitation and start staying active together.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#006CE5">
+  <link rel="icon" type="image/png" href="/assets/brand/fitandem-logo-web.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=20260919-2">
+  <script src="/invite.js" defer></script>
+</head>
+<body class="invite-page">
+  <main class="invite-shell" data-invite-page>
+    <section class="invite-card" aria-labelledby="invite-title">
+      <a class="brand" href="/" aria-label="Fitandem home"><img class="brand-logo" src="/assets/brand/fitandem-logo-web.png" alt="" width="256" height="256"><span>Fitandem</span></a>
+      <div class="invite-spark" aria-hidden="true">🔥</div>
+      <p class="kicker">Tandem invitation</p>
+      <h1 id="invite-title">You’ve been invited to join a Tandem.</h1>
+      <p id="invite-message">Install or open Fitandem to review the invitation. You will always confirm before joining.</p>
+      <a class="play-badge invite-play-badge" id="invite-play-link" href="https://play.google.com/store/apps/details?id=uk.co.dkhiggins.fitandem" aria-label="Get Fitandem on Google Play"><img src="/assets/badges/get-it-on-google-play.png" alt="Get it on Google Play" width="564" height="168"></a>
+      <p class="invite-fallback">Already installed? Open this same invitation link again after installation. If the badge does not work, <a id="invite-fallback-link" href="https://play.google.com/store/apps/details?id=uk.co.dkhiggins.fitandem">continue to Google Play</a>.</p>
+      <p class="invite-privacy">The link contains an opaque invite token. It does not contain a name, email address or account identifier.</p>
+      <noscript><p class="invite-error">JavaScript is needed to carry this invite into Google Play. You can install Fitandem now, then open the original invitation link again.</p></noscript>
+    </section>
+  </main>
+</body>
+</html>

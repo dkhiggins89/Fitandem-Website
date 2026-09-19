@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "uk.co.dkhiggins.fitandem",
+      "sha256_cert_fingerprints": [
+        "AB:B5:6C:46:71:EA:B0:D1:5D:8D:03:CD:80:17:EC:31:9F:71:6E:14:3E:56:AD:61:9E:F1:D9:7D:B6:8B:5F:3D",
+        "B4:10:6A:AD:51:0E:7D:A9:24:54:3B:23:E9:06:27:C4:A8:31:67:7D:B5:D1:86:15:19:BD:32:38:D7:41:48:7E",
+        "07:CE:C2:C0:50:77:E5:37:41:49:09:02:CD:44:3B:64:29:74:39:5D:D3:A3:BF:9E:2A:84:E0:29:8D:0F:63:E3"
+      ]
+    }
+  }
+]
