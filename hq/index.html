@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#031769">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Fitandem HQ</title>
+  <link rel="icon" type="image/png" href="../assets/brand/fitandem-logo-web.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="hq.css">
+  <script type="module" src="hq.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Fitandem website"><img src="../assets/brand/fitandem-logo-web.png" alt="" width="40" height="40"><span>Fitandem <b>HQ</b></span></a>
+      <div id="user-bar" class="user-bar" hidden><span id="user-email"></span><button id="sign-out" class="quiet-button" type="button">Sign out</button></div>
+    </header>
+
+    <section id="auth-panel" class="gate-card" aria-labelledby="gate-title">
+      <div class="gate-mark" aria-hidden="true">✦</div>
+      <p class="eyebrow">PRIVATE OWNER DASHBOARD</p>
+      <h1 id="gate-title">Your corner of Fitandem.</h1>
+      <p class="gate-copy">Sign in with the Google account configured for Fitandem HQ.</p>
+      <button id="sign-in" class="primary-button" type="button">Continue with Google <span aria-hidden="true">→</span></button>
+      <p id="auth-message" class="message" role="status" aria-live="polite"></p>
+      <p class="gate-foot">Private workspace · fitandem.com</p>
+    </section>
+
+    <section id="denied-panel" class="gate-card denied-card" aria-labelledby="denied-title" hidden>
+      <div class="gate-mark denied-mark" aria-hidden="true">!</div>
+      <p class="eyebrow">PRIVATE OWNER DASHBOARD</p>
+      <h1 id="denied-title">This account doesn’t have access.</h1>
+      <p id="denied-email" class="gate-copy"></p>
+      <button id="switch-account" class="primary-button" type="button">Switch Google account</button>
+    </section>
+
+    <div id="dashboard" hidden>
+      <section class="welcome-row">
+        <div><p class="eyebrow">OWNER WORKSPACE</p><h1>Good to see you.</h1><p class="subhead">A clear view of what’s moving Fitandem forward.</p></div>
+        <div class="date-pill"><span class="live-dot"></span><span id="today-date">Today</span></div>
+      </section>
+
+      <section class="section-block" aria-labelledby="status-title">
+        <div class="section-heading"><div><p class="eyebrow">THE ROAD AHEAD</p><h2 id="status-title">Status</h2></div></div>
+        <div class="status-grid">
+          <article class="status-card release-card"><span class="card-icon">✦</span><p>LIVE</p><strong>0.3.1 <span>(9)</span></strong><small>Current release</small></article>
+          <article class="status-card next-card"><span class="card-icon">↗</span><p>NEXT</p><strong>0.3.2 <span>(10)</span></strong><small>In the works</small></article>
+          <article class="status-card goal-card"><span class="card-icon">◎</span><p>GOAL · USERS</p><strong>0 <i>→</i> 100</strong><small>First 100 users</small><div class="progress-track"><span style="width:0%"></span></div></article>
+          <article class="status-card goal-card"><span class="card-icon">↔</span><p>GOAL · TANDEMS</p><strong>0 <i>→</i> 25</strong><small>25 pairs moving together</small><div class="progress-track"><span style="width:0%"></span></div></article>
+        </div>
+      </section>
+
+      <div class="two-column">
+        <section class="section-block panel" aria-labelledby="today-title">
+          <div class="section-heading"><div><p class="eyebrow">MAKE TODAY COUNT</p><h2 id="today-title">Today</h2></div><span id="task-count" class="count-pill">0 / 6</span></div>
+          <div id="checklist" class="checklist"></div>
+        </section>
+
+        <section class="section-block panel" aria-labelledby="growth-title">
+          <div class="section-heading"><div><p class="eyebrow">MANUAL SNAPSHOT</p><h2 id="growth-title">Growth</h2></div><span class="saved-label"><span class="live-dot"></span> Saved here</span></div>
+          <div id="growth-fields" class="growth-grid"></div>
+          <p class="local-note">Your numbers are stored in this browser only.</p>
+        </section>
+      </div>
+
+      <section class="section-block" aria-labelledby="social-title">
+        <div class="section-heading"><div><p class="eyebrow">SHOW UP WHERE THEY ARE</p><h2 id="social-title">Socials</h2></div><span class="section-hint">Quick links</span></div>
+        <div class="link-grid social-grid">
+          <a class="link-card" href="https://metricool.com/" target="_blank" rel="noopener noreferrer"><span class="link-symbol">M</span><span>Metricool</span><b>↗</b></a>
+          <a class="link-card" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><span class="link-symbol instagram-symbol">◎</span><span>Instagram</span><b>↗</b></a>
+          <a class="link-card" href="https://www.tiktok.com/creator-center/" target="_blank" rel="noopener noreferrer"><span class="link-symbol tiktok-symbol">♪</span><span>TikTok Studio</span><b>↗</b></a>
+          <a class="link-card" href="https://business.facebook.com/" target="_blank" rel="noopener noreferrer"><span class="link-symbol facebook-symbol">f</span><span>Facebook</span><b>↗</b></a>
+          <a class="link-card" href="https://www.threads.net/" target="_blank" rel="noopener noreferrer"><span class="link-symbol">@</span><span>Threads</span><b>↗</b></a>
+          <a class="link-card" href="https://studio.youtube.com/" target="_blank" rel="noopener noreferrer"><span class="link-symbol youtube-symbol">▶</span><span>YouTube Studio</span><b>↗</b></a>
+          <a class="link-card" href="https://x.com/" target="_blank" rel="noopener noreferrer"><span class="link-symbol">𝕏</span><span>X</span><b>↗</b></a>
+        </div>
+      </section>
+
+      <section class="section-block" aria-labelledby="tools-title">
+        <div class="section-heading"><div><p class="eyebrow">YOUR WORKBENCH</p><h2 id="tools-title">Tools &amp; analytics</h2></div></div>
+        <div class="link-grid tools-grid">
+          <a class="tool-link" href="https://play.google.com/console/" target="_blank" rel="noopener noreferrer"><span>Google Play Console</span><b>↗</b></a>
+          <a class="tool-link" href="https://console.firebase.google.com/" target="_blank" rel="noopener noreferrer"><span>Firebase Console</span><b>↗</b></a>
+          <a class="tool-link" href="https://app.metricool.com/" target="_blank" rel="noopener noreferrer"><span>Metricool</span><b>↗</b></a>
+          <a class="tool-link" href="https://github.com/" target="_blank" rel="noopener noreferrer"><span>GitHub</span><b>↗</b></a>
+          <a class="tool-link" href="https://fitandem.com/" target="_blank" rel="noopener noreferrer"><span>Fitandem website</span><b>↗</b></a>
+          <a class="tool-link" href="https://alternativeto.net/" target="_blank" rel="noopener noreferrer"><span>AlternativeTo</span><b>↗</b></a>
+        </div>
+      </section>
+
+      <section class="section-block" aria-labelledby="content-title">
+        <div class="section-heading"><div><p class="eyebrow">WHAT’S IN THE PIPELINE</p><h2 id="content-title">Content</h2></div><span class="section-hint">Edit a title or status</span></div>
+        <div id="content-cards" class="content-grid"></div>
+      </section>
+
+      <section class="section-block quick-copy" aria-labelledby="copy-title">
+        <div class="section-heading"><div><p class="eyebrow">READY WHEN YOU ARE</p><h2 id="copy-title">Quick copy</h2></div></div>
+        <div class="copy-list">
+          <button class="copy-card" type="button" data-copy="https://fitandem.com/android"><span><small>ANDROID APP</small><strong>https://fitandem.com/android</strong></span><b>Copy</b></button>
+          <button class="copy-card" type="button" data-copy="https://fitandem.com/"><span><small>WEBSITE</small><strong>https://fitandem.com/</strong></span><b>Copy</b></button>
+          <button class="copy-card" type="button" data-copy="Fitandem: Stay Active Together"><span><small>APP NAME</small><strong>Fitandem: Stay Active Together</strong></span><b>Copy</b></button>
+        </div>
+        <p id="copy-message" class="copy-message" role="status" aria-live="polite"></p>
+      </section>
+      <footer class="footer"><a href="/">← Back to fitandem.com</a><span>Built to keep the momentum going <span aria-hidden="true">✦</span></span></footer>
+    </div>
+  </main>
+</body>
+</html>
