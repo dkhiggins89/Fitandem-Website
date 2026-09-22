@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://fitandem.com/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <image:image>
+      <image:loc>https://fitandem.com/assets/brand/fitandem-feature-graphic.png</image:loc>
+      <image:caption>Fitandem: Stay Active Together</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fitandem.com/assets/screenshots/home-shared-streak.webp</image:loc>
+      <image:caption>Fitandem home screen showing a shared fitness streak</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fitandem.com/assets/screenshots/home-log-momentum.webp</image:loc>
+      <image:caption>Fitandem movement logging and Tandem momentum</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fitandem.com/assets/screenshots/progress-weekly.webp</image:loc>
+      <image:caption>Fitandem weekly fitness progress and shared streak</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fitandem.com/assets/screenshots/duo-insights.webp</image:loc>
+      <image:caption>Fitandem Duo shared activity insights</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fitandem.com/assets/screenshots/activity-history.webp</image:loc>
+      <image:caption>Fitandem personal activity history</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fitandem.com/assets/screenshots/achievements-collection.webp</image:loc>
+      <image:caption>Fitandem fitness achievement collection</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fitandem.com/privacy/</loc>
+    <lastmod>2026-09-11</lastmod>
+  </url>
+  <url>
+    <loc>https://fitandem.com/delete-account/</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+</urlset>
