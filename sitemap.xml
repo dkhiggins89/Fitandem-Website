@@ -41,4 +41,28 @@
     <loc>https://fitandem.com/delete-account/</loc>
     <lastmod>2026-09-19</lastmod>
   </url>
+  <url>
+    <loc>https://fitandem.com/fitness-accountability-app/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <image:image>
+      <image:loc>https://fitandem.com/assets/screenshots/home-shared-streak.webp</image:loc>
+      <image:caption>Fitandem home screen showing a shared fitness streak</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fitandem.com/workout-partner-app/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <image:image>
+      <image:loc>https://fitandem.com/assets/screenshots/home-log-momentum.webp</image:loc>
+      <image:caption>Fitandem movement logging and Tandem momentum</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fitandem.com/shared-fitness-streaks/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <image:image>
+      <image:loc>https://fitandem.com/assets/screenshots/home-shared-streak.webp</image:loc>
+      <image:caption>Fitandem home screen showing a shared fitness streak</image:caption>
+    </image:image>
+  </url>
 </urlset>
