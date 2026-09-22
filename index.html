@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fitandem: Stay Active Together | Fitness Accountability App</title>
   <meta name="description" content="Fitandem is the Android fitness accountability app for you and one other person. Log activity, build shared streaks, unlock achievements and find workouts together.">
+  <meta name="application-name" content="Fitandem">
   <meta name="theme-color" content="#006CE5">
   <meta property="og:title" content="Fitandem: Stay Active Together">
   <meta property="og:description" content="Stay active with someone in your corner. Track activity, build shared streaks, unlock achievements and discover workouts together.">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fitandem">
   <meta property="og:url" content="https://fitandem.com/">
   <meta property="og:image" content="https://fitandem.com/assets/brand/fitandem-feature-graphic.png">
   <meta property="og:image:width" content="1024">
@@ -23,7 +25,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260919-1">
+  <link rel="stylesheet" href="styles.css?v=20260922-1">
+  <script defer src="main.js?v=20260922-1"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,7 +46,8 @@
   <header class="site-header" id="top">
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="Fitandem home"><img class="brand-logo" src="assets/brand/fitandem-logo-web.png" alt="" width="256" height="256"><span>Fitandem</span></a>
-      <nav class="site-nav" aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#features">Features</a><a href="#achievements">Achievements</a><a href="#duo">Duo</a><a class="nav-install" href="https://fitandem.com/android">Get the app</a></nav>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#features">Features</a><a href="#achievements">Achievements</a><a href="#duo">Duo</a><a class="nav-install" href="https://fitandem.com/android">Get the app <span aria-hidden="true">↗</span></a></nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -58,11 +62,12 @@
           <a class="play-badge" href="https://fitandem.com/android" aria-label="Get Fitandem on Google Play"><img src="assets/badges/get-it-on-google-play.png" alt="Get it on Google Play" width="564" height="168"></a>
           <a class="button button-secondary" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
         </div>
-        <p class="microcopy">Your movement. Your pace. Someone in your corner.</p>
+        <ul class="hero-proof" aria-label="Fitandem benefits"><li>Core features free</li><li>Built for two</li><li>Support, not competition</li></ul>
       </div>
       <div class="hero-art">
         <div class="hero-orbit" aria-hidden="true"></div><span class="spark spark-one" aria-hidden="true">✦</span><span class="spark spark-two" aria-hidden="true">✦</span>
-        <img src="assets/brand/fit-em-ready-together.png" alt="Fit and Em, two cheerful blue flame fitness companions, ready to move together" width="1024" height="1024">
+        <img src="assets/brand/fit-em-ready-together.webp" alt="Fit and Em, two cheerful blue flame fitness companions, ready to move together" width="1024" height="1024" decoding="async" fetchpriority="high">
+        <div class="activity-chip"><span aria-hidden="true">✓</span><span><strong>Both moved today</strong><small>That is a Tandem day</small></span></div>
         <div class="streak-chip"><span class="streak-flame" aria-hidden="true">🔥</span><span><strong>Shared Streak</strong><small>Momentum you build together</small></span></div>
       </div>
     </section>
@@ -98,23 +103,23 @@
         <ol class="story-list">
           <li class="story-card story-card-wide">
             <div class="story-copy"><span>01 · Stay active together</span><h3>See your Shared Streak at a glance.</h3><p>Your home screen keeps both people, today’s status and the next useful action in one friendly place.</p></div>
-            <figure class="screen-frame"><img src="assets/screenshots/home-shared-streak.png" alt="Fitandem home screen showing a six-day Shared Streak, paired mascots and the Log a Move button" width="1080" height="2400" loading="lazy" decoding="async"></figure>
+            <figure class="screen-frame"><img src="assets/screenshots/home-shared-streak.webp" alt="Fitandem home screen showing a six-day Shared Streak, paired mascots and the Log a Move button" width="1080" height="2400" loading="lazy" decoding="async"></figure>
           </li>
           <li class="story-card">
             <div class="story-copy"><span>02 · Log a move</span><h3>Any move counts.</h3><p>Choose a movement category and see the momentum you are building with your Tandem.</p></div>
-            <figure class="screen-frame"><img src="assets/screenshots/home-log-momentum.png" alt="Fitandem home screen showing Arms and Legs movement choices and Tandem momentum" width="1080" height="2400" loading="lazy" decoding="async"></figure>
+            <figure class="screen-frame"><img src="assets/screenshots/home-log-momentum.webp" alt="Fitandem home screen showing Arms and Legs movement choices and Tandem momentum" width="1080" height="2400" loading="lazy" decoding="async"></figure>
           </li>
           <li class="story-card">
             <div class="story-copy"><span>03 · Track progress</span><h3>See movement add up.</h3><p>Follow weekly minutes, your activity graph and the Shared Streak you are building together.</p></div>
-            <figure class="screen-frame"><img src="assets/screenshots/progress-weekly.png" alt="Fitandem Progress screen showing 145 minutes moved, a weekly graph and an active Tandem" width="1080" height="2400" loading="lazy" decoding="async"></figure>
+            <figure class="screen-frame"><img src="assets/screenshots/progress-weekly.webp" alt="Fitandem Progress screen showing 145 minutes moved, a weekly graph and an active Tandem" width="1080" height="2400" loading="lazy" decoding="async"></figure>
           </li>
           <li class="story-card story-card-wide story-card-reverse">
             <div class="story-copy"><span>04 · Understand your Tandem</span><h3>See your rhythm with Duo.</h3><p>Switch between 30- and 90-day views to understand together days, active days, total minutes and your best shared run.</p></div>
-            <figure class="screen-frame"><img src="assets/screenshots/duo-insights.png" alt="Fitandem Duo Insights screen with 30- and 90-day views, together days, active days, total minutes, best shared run and rhythm grid" width="1080" height="2400" loading="lazy" decoding="async"></figure>
+            <figure class="screen-frame"><img src="assets/screenshots/duo-insights.webp" alt="Fitandem Duo Insights screen with 30- and 90-day views, together days, active days, total minutes, best shared run and rhythm grid" width="1080" height="2400" loading="lazy" decoding="async"></figure>
           </li>
           <li class="story-card story-card-history">
             <div class="story-copy"><span>05 · Look back</span><h3>Your movement, clearly recorded.</h3><p>Activity history keeps personal moves, categories, duration, effort and dates easy to scan.</p></div>
-            <figure class="screen-frame"><img src="assets/screenshots/activity-history.png" alt="Fitandem Activity History showing personal moves with categories, duration, effort and dates" width="1080" height="2400" loading="lazy" decoding="async"></figure>
+            <figure class="screen-frame"><img src="assets/screenshots/activity-history.webp" alt="Fitandem Activity History showing personal moves with categories, duration, effort and dates" width="1080" height="2400" loading="lazy" decoding="async"></figure>
           </li>
         </ol>
       </div>
@@ -130,7 +135,7 @@
           </ul>
         </div>
         <figure class="achievement-screen">
-          <div class="screen-frame"><img src="assets/screenshots/achievements-collection.png" alt="Fitandem Achievements screen showing collection progress and recently unlocked badges including First Shared Day, 5-Day Shared Streak and Rescued Together" width="1080" height="2400" loading="lazy" decoding="async"></div>
+          <div class="screen-frame"><img src="assets/screenshots/achievements-collection.webp" alt="Fitandem Achievements screen showing collection progress and recently unlocked badges including First Shared Day, 5-Day Shared Streak and Rescued Together" width="1080" height="2400" loading="lazy" decoding="async"></div>
           <figcaption>Milestones for your movement and the momentum you build together.</figcaption>
         </figure>
       </div>
@@ -163,7 +168,7 @@
     </section>
 
     <section class="section section-shell mascot-section" aria-labelledby="mascot-title">
-      <div class="mascot-art"><div class="mascot-ring" aria-hidden="true"></div><img src="assets/brand/fit-em-ready-together.png" alt="Fit and Em smiling side by side" width="1024" height="1024" loading="lazy" decoding="async"></div>
+      <div class="mascot-art"><div class="mascot-ring" aria-hidden="true"></div><img src="assets/brand/fit-em-ready-together.webp" alt="Fit and Em smiling side by side" width="1024" height="1024" loading="lazy" decoding="async"></div>
       <div class="mascot-copy"><span class="kicker">Meet Fit &amp; Em</span><h2 id="mascot-title">Two little flames in your corner.</h2><p>Fit brings the spark. Em brings the steady encouragement. Together, they celebrate the moves you make and help every fresh start feel welcome.</p><div class="personality-pills"><span>⚡ Fit · bring the energy</span><span>💙 Em · keep it kind</span></div></div>
     </section>
 
