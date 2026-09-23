@@ -111,3 +111,60 @@ test("SEO landing pages exist, are indexable and carry complete metadata", () =>
     assert.match(sitemap, new RegExp(`<loc>${canonicalUrl.replace(/\//g, "\\/")}</loc>`), `${page} is listed in sitemap.xml`);
   }
 });
+
+const blogPages = [
+  "blog",
+  "blog/how-to-stay-accountable-with-a-workout-partner",
+  "blog/why-10-minutes-of-movement-still-counts",
+  "blog/how-shared-fitness-streaks-help-you-stay-consistent"
+];
+
+test("blog pages have distinct indexable metadata, valid schema and working local links", () => {
+  const sitemap = read("sitemap.xml");
+  const titles = new Set();
+  const descriptions = new Set();
+
+  for (const page of blogPages) {
+    const file = `${page}/index.html`;
+    assert.ok(fs.existsSync(path.join(root, file)), `${file} exists`);
+    const html = read(file);
+    const url = `https://fitandem.com/${page}/`;
+    const title = (html.match(/<title>([^<]+)<\/title>/) || [])[1];
+    const description = (html.match(/<meta name="description" content="([^"]+)"/) || [])[1];
+
+    assert.ok(title && !titles.has(title), `${page} has a unique title`);
+    assert.ok(description && !descriptions.has(description), `${page} has a unique description`);
+    titles.add(title);
+    descriptions.add(description);
+    assert.match(html, /<html lang="en-GB">/);
+    assert.match(html, /name="robots" content="index, follow,/);
+    assert.ok(html.includes(`<link rel="canonical" href="${url}">`), `${page} canonical is correct`);
+    assert.ok(html.includes(`<meta property="og:url" content="${url}">`), `${page} OG URL is correct`);
+    assert.match(html, /<meta name="twitter:card" content="summary_large_image">/);
+    assert.equal([...html.matchAll(/<h1\b/g)].length, 1, `${page} has one H1`);
+    assert.doesNotMatch(html, /—/, `${page} avoids em dashes`);
+
+    const data = structuredData(html);
+    assert.equal(data.length, 1, `${page} has one JSON-LD script`);
+    const graph = data[0]["@graph"];
+    assert.ok(Array.isArray(graph), `${page} schema graph parses`);
+    assert.ok(graph.some((entry) => entry["@type"] === (page === "blog" ? "Blog" : "BlogPosting")), `${page} has the right schema type`);
+    if (page !== "blog") {
+      const article = graph.find((entry) => entry["@type"] === "BlogPosting");
+      assert.equal(article.mainEntityOfPage["@id"], url);
+      assert.equal(article.inLanguage, "en-GB");
+      assert.ok(graph.some((entry) => entry["@type"] === "BreadcrumbList"), `${page} has breadcrumb schema`);
+    }
+
+    const references = [...html.matchAll(/(?:href|src)="([^"]+)"/g)].map((match) => match[1]);
+    for (const ref of references) {
+      if (ref.startsWith("#") || ref.startsWith("mailto:") || /^https?:\/\//.test(ref)) continue;
+      const clean = ref.split(/[?#]/)[0];
+      const resolved = clean.startsWith("/") ? path.join(root, clean) : path.resolve(root, page, clean);
+      const target = clean.endsWith("/") || !path.extname(clean) ? path.join(resolved, "index.html") : resolved;
+      assert.ok(fs.existsSync(target), `${page} local reference resolves: ${ref}`);
+    }
+
+    assert.match(sitemap, new RegExp(`<loc>${url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}</loc>\\s*<lastmod>2026-09-23</lastmod>`), `${page} appears in sitemap with launch date`);
+  }
+});

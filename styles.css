@@ -270,3 +270,22 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--cyan-bright);outlin
 .guide-card b{margin-top:auto;color:var(--blue);font-size:18px;font-weight:900}
 @media(hover:hover){.guide-card:hover{transform:translateY(-3px);border-color:rgba(0,108,229,.24);box-shadow:0 18px 38px rgba(3,23,105,.1)}}
 @media(max-width:760px){.guide-grid{grid-template-columns:1fr}}
+
+/* Blog */
+.blog-page .blog-hero{padding-block:clamp(48px,6vw,76px)}
+.blog-page .blog-hero h1{font-size:clamp(42px,5.6vw,66px);line-height:1.05}
+.blog-page .breadcrumbs{flex-wrap:wrap}
+.blog-list{padding-block:clamp(52px,7vw,86px)}
+.blog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.blog-grid .guide-card{min-height:260px;padding:26px}
+.blog-grid .guide-card h2{margin:0;color:var(--navy);font-size:clamp(20px,2vw,24px);font-weight:900;letter-spacing:-.025em;line-height:1.25}
+.blog-grid .guide-card p{font-size:15px;line-height:1.6}
+.blog-article{width:min(720px,calc(100% - clamp(32px,6vw,72px)));margin-inline:auto;padding-block:clamp(54px,7vw,88px)}
+.blog-article section+section{margin-top:42px}
+.blog-article h2{margin:0 0 17px;color:var(--navy);font-size:clamp(27px,3vw,34px);font-weight:900;letter-spacing:-.035em;line-height:1.2}
+.blog-article p{margin:0 0 20px;color:#334f68;font-size:18px;line-height:1.8}
+.blog-article p:last-child{margin-bottom:0}
+.blog-article a{color:var(--blue-dark);font-weight:800;text-underline-offset:3px}
+.blog-article .blog-back{margin-top:54px;padding-top:23px;border-top:1px solid var(--line);font-size:15px}
+@media(max-width:900px){.blog-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.blog-grid{grid-template-columns:1fr}.blog-grid .guide-card{min-height:0}.blog-article p{font-size:17px;line-height:1.75}.blog-article section+section{margin-top:35px}}
