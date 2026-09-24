@@ -34,7 +34,7 @@
         "name": "Privacy Policy | Fitandem",
         "description": "How Fitandem collects, uses, shares and protects personal information.",
         "inLanguage": "en-GB",
-        "dateModified": "2026-09-11",
+        "dateModified": "2026-09-24",
         "isPartOf": {"@id": "https://fitandem.com/#website"}
       },
       {
@@ -64,7 +64,7 @@
         <p class="eyebrow">Your information</p>
         <h1>Privacy Policy</h1>
         <p class="legal-lead">This policy explains how Fitandem handles personal information when you use the Android app or visit fitandem.com.</p>
-        <p class="legal-date"><strong>Effective and last updated:</strong> 11 September 2026</p>
+        <p class="legal-date"><strong>Effective and last updated:</strong> 24 September 2026</p>
       </div>
     </section>
     <div class="legal-shell legal-layout">
@@ -84,7 +84,7 @@
         <section class="legal-summary" aria-label="Privacy summary">
           <div><h2>Your account</h2><p>We use account, profile and workout information to provide Fitandem and keep your activity in sync.</p></div>
           <div><h2>Your Tandem</h2><p>An accepted Tandem can see limited shared activity, streak information, nudges and recommendations, not your private workout notes.</p></div>
-          <div><h2>Your choices</h2><p>You can control notifications, disconnect a Tandem and use in-app account deletion. You also have UK data-protection rights.</p></div>
+          <div><h2>Your choices</h2><p>You can control notifications and optional usage analytics, disconnect a Tandem and use in-app account deletion. You also have UK data-protection rights.</p></div>
         </section>
         <section id="who-we-are">
           <h2>1. Who we are</h2>
@@ -112,7 +112,11 @@
           <h3>Fitandem Duo purchases and subscriptions</h3>
           <p>If you buy or use a Fitandem Duo subscription, Google Play handles the purchase and payment method. Fitandem receives information needed to verify and provide the subscription, which may include the Google Play purchase token or a protected representation of it, product and plan identifiers, subscription and acknowledgement status, expiry information, entitlement owner and beneficiary identifiers, Tandem binding information, and verification timestamps. Fitandem does not receive your full card or bank-account details from Google Play.</p>
           <h3>Technical, device and diagnostic information</h3>
-          <p>Fitandem and its service providers may process limited technical information needed to connect, secure and troubleshoot the service, such as IP address, device or app identifiers, app version, operating-system information, request and authentication logs, error details and message-delivery information. The app does not currently include Firebase Analytics, Firebase Crashlytics, advertising SDKs or third-party ad networks.</p>
+          <p>Fitandem and its service providers may process limited technical information needed to connect, secure and troubleshoot the service, such as IP address, device or app identifiers, app version, operating-system information, request and authentication logs, error details and message-delivery information. The app does not currently include Firebase Crashlytics, advertising SDKs or third-party ad networks.</p>
+          <h3>Optional usage analytics</h3>
+          <p>Fitandem includes optional Firebase Analytics in the Android app. Analytics collection is off by default and starts only if you explicitly choose “Allow analytics” in the app. You can change or withdraw your choice at any time in Settings → Usage analytics. Turning it off disables Analytics collection.</p>
+          <p>If you opt in, Fitandem sends four product milestones to Firebase Analytics: creating an account, completing first-run onboarding, opening the invite sharing options, and connecting with a Tandem. These custom events have no custom parameters. Fitandem does not add names, email addresses, Firebase user identifiers, partner identities, invite links or tokens, workout details, exercise types, durations, body or health information, or free text as custom Analytics event parameters.</p>
+          <p>Separately from those Fitandem events, Firebase Analytics may automatically collect app-use and technical information when enabled, including an app-instance identifier, general device and app information, coarse location derived from a masked IP address, and automatic purchase or subscription events. Analytics data may therefore be associated with a pseudonymous identifier. Automatic screen reporting, Advertising ID collection and ad-personalisation signals are disabled.</p>
           <p>The Fitandem website does not include Fitandem analytics, advertising technology or a Fitandem cookie-consent system. Its hosting provider and the providers of embedded web resources may nevertheless receive ordinary request information such as IP address, browser or device information, requested pages and timestamps.</p>
         </section>
         <section id="purposes">
@@ -123,6 +127,7 @@
             <tr><td>Deliver requested notifications, nudges and reminders</td><td>Messaging token, notification content, event identifiers and preferences</td><td>Performance of our contract and, for optional device permissions or choices, consent</td></tr>
             <tr><td>Verify Google Play purchases and manage Duo entitlements</td><td>Purchase token, product, subscription and entitlement records</td><td>Performance of our contract; legitimate interests in preventing fraud and protecting paid features</td></tr>
             <tr><td>Operate, secure, prevent abuse, diagnose faults and improve reliability</td><td>Technical logs, identifiers, rate limits, errors and service events</td><td>Our legitimate interests in maintaining, securing and improving Fitandem</td></tr>
+            <tr><td>Understand general app use and improve Fitandem, if you opt in to Firebase Analytics</td><td>Parameter-free product milestones and information Firebase Analytics may collect automatically</td><td>Your consent, which you can withdraw in Settings → Usage analytics</td></tr>
             <tr><td>Meet legal, accounting, regulatory or dispute-handling duties</td><td>Relevant account, transaction, security or correspondence records</td><td>Legal obligation or our legitimate interests in establishing, exercising or defending legal claims</td></tr>
           </tbody></table></div>
           <p>Where we rely on legitimate interests, we consider the necessity of the processing and balance those interests against your rights. Fitandem does not use your information to make solely automated decisions that produce legal or similarly significant effects.</p>
@@ -138,7 +143,7 @@
           <h2>5. Service providers and third-party services</h2>
           <p>We use the following providers to run Fitandem:</p>
           <ul>
-            <li><strong>Google Firebase</strong>: Firebase Authentication, Cloud Firestore, Cloud Functions and Firebase Cloud Messaging provide authentication, database, backend and notification services. Google generally processes this information on our behalf under its Firebase terms. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase privacy and security information</a>.</li>
+            <li><strong>Google Firebase</strong>: Firebase Authentication, Cloud Firestore, Cloud Functions and Firebase Cloud Messaging provide authentication, database, backend and notification services. Optional Firebase Analytics processes app-use information after you opt in. Google's role and terms may differ between Firebase services. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase privacy and security information</a>.</li>
             <li><strong>Google Play</strong>: processes Android app purchases and subscriptions and provides Fitandem with purchase-verification and subscription-status information. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</li>
             <li><strong>YouTube API Services and the YouTube embedded player</strong>: provide public workout search results and video playback. Your use of those features is also subject to the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>. You can review and manage relevant Google privacy controls through Google’s privacy tools.</li>
             <li><strong>GitHub Pages</strong>: hosts fitandem.com and may process web-server and security logs. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.</li>
@@ -166,7 +171,7 @@
         <section id="retention">
           <h2>9. How long we keep information</h2>
           <p>Account and service data is generally retained while your Fitandem account remains active. We use retention criteria rather than inventing a single fixed period: how long information remains necessary to provide your account and features, maintain security and service integrity, verify transactions, handle disputes, and meet legal obligations.</p>
-          <p>When you use Fitandem’s account-deletion functionality, associated Fitandem account data is deleted as described below. Limited technical, security, transaction or legal records may be retained where necessary for security, fraud prevention, dispute handling or legal obligations. Information may also remain temporarily in service-provider logs or backups until those systems cycle or delete it under the provider’s applicable retention process.</p>
+          <p>When you use Fitandem’s account-deletion functionality, associated Fitandem account data is deleted as described below. Limited technical, security, transaction or legal records may be retained where necessary for security, fraud prevention, dispute handling or legal obligations. Firebase Analytics data, if you opted in, is subject to Google's applicable retention settings and is not necessarily deleted by the in-app account-deletion process. Information may also remain temporarily in service-provider logs or backups until those systems cycle or delete it under the provider’s applicable retention process.</p>
         </section>
         <section id="deletion">
           <h2>10. Account and data deletion</h2>
