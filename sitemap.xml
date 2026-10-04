@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://fitandem.com/</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <image:image>
       <image:loc>https://fitandem.com/assets/brand/fitandem-feature-graphic.png</image:loc>
       <image:caption>Fitandem: Stay Active Together</image:caption>
@@ -11,22 +11,6 @@
     <image:image>
       <image:loc>https://fitandem.com/assets/screenshots/app-home-streak.webp</image:loc>
       <image:caption>Fitandem home screen showing a shared fitness streak</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://fitandem.com/assets/screenshots/app-progress.webp</image:loc>
-      <image:caption>Fitandem weekly progress and shared streak</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://fitandem.com/assets/screenshots/app-home-momentum.webp</image:loc>
-      <image:caption>Fitandem Tandem momentum and recent moves</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://fitandem.com/assets/screenshots/app-workout-finder.webp</image:loc>
-      <image:caption>Fitandem Workout Finder filters</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://fitandem.com/assets/screenshots/app-tandems.webp</image:loc>
-      <image:caption>Fitandem Tandems and weekly challenge</image:caption>
     </image:image>
   </url>
   <url>
@@ -39,7 +23,7 @@
   </url>
   <url>
     <loc>https://fitandem.com/fitness-accountability-app/</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <image:image>
       <image:loc>https://fitandem.com/assets/screenshots/app-home-streak.webp</image:loc>
       <image:caption>Fitandem home screen showing a shared fitness streak</image:caption>
@@ -47,7 +31,7 @@
   </url>
   <url>
     <loc>https://fitandem.com/workout-partner-app/</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <image:image>
       <image:loc>https://fitandem.com/assets/screenshots/app-home-momentum.webp</image:loc>
       <image:caption>Fitandem movement logging and Tandem momentum</image:caption>
@@ -55,7 +39,7 @@
   </url>
   <url>
     <loc>https://fitandem.com/shared-fitness-streaks/</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <image:image>
       <image:loc>https://fitandem.com/assets/screenshots/app-home-streak.webp</image:loc>
       <image:caption>Fitandem home screen showing a shared fitness streak</image:caption>
